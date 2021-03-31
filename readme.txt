@@ -3,4 +3,4 @@ Este es un repositorio que contiene varias funciones JS que permiten realizar di
 Indice de funciones:
 ---------------------------
 
-01_format: formatea un numero de 10 digitos mientras se ingresa a un numero con formato 000-000-0000
+formatDashNum: formatea un numero de 10 digitos mientras se ingresa a un numero con formato 000-000-0000
