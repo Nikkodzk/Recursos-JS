@@ -1,3 +1,6 @@
+// HTML
+// <input type="text" maxlength="12" id="pn" onkeyup="format()" class="w-25" placeholder="Ingrese PN">
+
 function formatDashNum(){
   // formato salida = 000-000-0000
   let part = document.getElementById('pn').value;
