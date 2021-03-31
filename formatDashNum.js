@@ -1,4 +1,4 @@
-function format(){
+function formatDashNum(){
   // formato salida = 000-000-0000
   let part = document.getElementById('pn').value;
   let input = part.split('');
