@@ -1,4 +1,4 @@
-Este es un repositorio que contiene varias funciones JS que permiten realizar diferentes cosas.
+Este es un repositorio que contiene funciones JS para utilizar en diversos proyectos
 
 Indice de funciones:
 ---------------------------
