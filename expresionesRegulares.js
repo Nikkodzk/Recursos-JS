@@ -1,21 +1,10 @@
 // regular expressions
 
 const str = 'Hola mundo, hola ciudad, hola city, cola, mola, 2ola, 1ola, hoooooola';
+const regex = /hola/;
+console.log(str.match(regex)) // true
 
 
-//const regex = /hola/; // encontar exacto el texto
-// const regex = /hola/g;  // encontar exacto el texto, pero todos
-// const regex = /hola/ig;  // ignorar mayusculas y minusculas
-// const regex = /.ola/g;  // punto (.) es comodin
-// const regex = /[hm]ola/g;  // punto [az] es comodin limitado
-// const regex = /[a-h]ola/g;  // guion [a-h] lmita caracteres de la a hasta la h = a,b,c,d,e,f,g,h
-// const regex = /[a-h0-8]ola/g;  // guion [a-h0-8] lmita caracteres de la a hasta la h y del 0 al 8
-
-
-
-console.log(str.match(regex))
-
-/*
 /texto/   expresionRegular 
 g         todas las coincidencias
 i         ignoreCase 
@@ -24,4 +13,18 @@ i         ignoreCase
 [abc]     grupo de comodines limitados
 [a-z]     grupo de comodines limitados con intermedios
 [a-z0-9]  grupo de comodines limitados con intermedios y combinado con otro grupo de comodines
-*/
+/a+/ => 1 o mas veces
+/a*/ => 0 o mas veces
+/^a/ => al inicio
+/$a/ => al final
+/\w/ => [A-Za-z0-9_]
+/\W/ => [^A-Za-z0-9_]
+/\d/ => [0-9]
+/\D/ => [^0-9]
+/\s/ => espacios en blanco, tabulaciones, saltos de linea, etc
+/\S/ => no espacios en blanco, tabulaciones, saltos de linea, etc
+/a{3,5}h/ => a entre 3 y 5 veces. 2 no, 6 tampoco
+/a{3, }h/ => a entre 3 y infinito
+/a{3}h/ => a solo 3 veces
+/colou?r/ => la u es opcional
+
