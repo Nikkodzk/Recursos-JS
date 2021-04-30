@@ -14,3 +14,14 @@ const str = 'Hola mundo, hola ciudad, hola city, cola, mola, 2ola, 1ola, hoooooo
 
 
 console.log(str.match(regex))
+
+/*
+/texto/   expresionRegular 
+g         todas las coincidencias
+i         ignoreCase 
+.         comodin
+[a]       comodin limitado
+[abc]     grupo de comodines limitados
+[a-z]     grupo de comodines limitados con intermedios
+[a-z0-9]  grupo de comodines limitados con intermedios y combinado con otro grupo de comodines
+*/
