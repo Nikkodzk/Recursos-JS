@@ -27,4 +27,4 @@ i         ignoreCase
 /a{3, }h/ => a entre 3 y infinito
 /a{3}h/ => a solo 3 veces
 /colou?r/ => la u es opcional
-
+/P(engu|umpk)in/ => .test() retora true para Penguin o Punpkin
