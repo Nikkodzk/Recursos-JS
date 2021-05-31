@@ -36,3 +36,49 @@ console.log(animales2); // [
   { tipo: 'gato', nombre: 'Garfield' },
 ]
 
+
+------------- filter() -------------
+  
+  - No modifica el array original
+  - Filtra los elementos del array
+  - Crea un nuevo array de igual o menor longitud
+  - Crea un nuevo array con los elementos que pasen la condicion
+  
+const users = [
+  { name: 'John', age: 34 },
+  { name: 'Amy', age: 20 },
+  { name: 'camperCat', age: 10 }
+];
+
+const usersUnder30 = users.filter(user => user.age < 30);
+
+console.log(usersUnder30); // [ { name: 'Amy', age: 20 }, { name: 'camperCat', age: 10 } ].
+
+
+------------- slice() -------------
+  
+  - Devuelve un nuevo array
+  - recibe 2 argumentos
+    1. posicion desde donde inicia
+    2. posicion de corte (no inclusivo) => si no se indica, va hasta el final
+  
+let arr = ["Cat", "Dog", "Tiger", "Zebra"];
+let newArray = arr.slice(1, 3);
+console.log(newArray); // ["Dog", "Tiger"].
+
+
+------------- reduce() -------------
+ 
+  - Recibe 2 argumentos
+    1. acumulador => es como un index
+    2. valor inicial del acumulador (en el 1er ejemplo empieza de 1 x eso da como resultado 5 a pesar que 'casa' tiene 4 letras)
+ 
+  
+let nArray = ['c','a','s','a'];
+let acumuluador = nArray.reduce((acumulador)=>acumulador,1);
+console.log(acumuluador) // 5
+
+
+let numeros = [1,2,3,4,5];
+let total = numeros.reduce((acum, elem) => acum+elem);
+console.log(total); // 15
