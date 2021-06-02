@@ -7,6 +7,13 @@ unshift() => +1 al inicio
 splice(0,2,'algo','algomas') => remueve desde la posicion 0, 2 elementos y agrega desde la posicion 0 los elementos 'algo ' y 'algo mas'
 
 
+------------- Eliminar 1 elemento -------------
+
+  let someArr = [1,2,3,4,5,6];
+  delete someArr[0]; // [,2,3,4,5,6]
+  console.log(someArr.filter(x => x!== null)) // [2,3,4,5,6]
+
+
 ------------- forEach() -------------
 
 arr.forEach((e, index) => {
